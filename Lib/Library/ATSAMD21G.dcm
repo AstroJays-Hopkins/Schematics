@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ATSAMD21G16B-AU
+D Atmel SMART 32-bit ARM M0+ MCU, 48MHz, 8K SRAM, 64K Flash, TQFP-48
+K 32-bit ARM Cortex-M0+ MCU Microcontroller
+$ENDCMP
+#
+$CMP ATSAMD21G17A-AU
+D Atmel SMART 32-bit ARM M0+ MCU, 48MHz, 16K SRAM, 128K Flash, TQFP-48
+K 32-bit ARM Cortex-M0+ MCU Microcontroller
+$ENDCMP
+#
+$CMP ATSAMD21G18A-AU
+D Atmel SMART 32-bit ARM M0+ MCU, 48MHz, 32K SRAM, 256K Flash, TQFP-48
+K 32-bit ARM Cortex-M0+ MCU Microcontroller
+$ENDCMP
+#
+#End Doc Library
