@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:Recovery PCB-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 6 8
 Title ""
 Date ""
 Rev ""
@@ -217,8 +217,6 @@ Wire Wire Line
 Connection ~ 7950 4550
 Text HLabel 5350 3050 0    50   Input ~ 0
 nRESET
-Text HLabel 5450 4050 0    50   Input ~ 0
-ADDR
 Wire Wire Line
 	5450 3950 5100 3950
 Wire Wire Line
@@ -385,6 +383,19 @@ F 1 "GND" H 5105 4427 50  0000 C CNN
 F 2 "" H 5100 4600 50  0001 C CNN
 F 3 "" H 5100 4600 50  0001 C CNN
 	1    5100 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4050 5350 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5E5F566F
+P 5350 4050
+F 0 "#PWR?" H 5350 3800 50  0001 C CNN
+F 1 "GND" H 5355 3877 50  0000 C CNN
+F 2 "" H 5350 4050 50  0001 C CNN
+F 3 "" H 5350 4050 50  0001 C CNN
+	1    5350 4050
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Recovery PCB-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RF_AM_FM:RFM95W-915S2 U?
-U 1 1 5E277423
-P 4550 2900
-F 0 "U?" H 4550 3578 50  0000 C CNN
-F 1 "RFM95W-915S2" H 4550 3487 50  0000 C CNN
-F 2 "" H 1250 4550 50  0001 C CNN
-F 3 "http://www.hoperf.com/upload/rf/RFM95_96_97_98W.pdf" H 1250 4550 50  0001 C CNN
-	1    4550 2900
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 5E279029
@@ -165,4 +154,15 @@ NoConn ~ 5050 2900
 NoConn ~ 5050 3000
 NoConn ~ 5050 3100
 NoConn ~ 5050 3200
+$Comp
+L RF_Module:RFM95W-915S2 U?
+U 1 1 5E548A5D
+P 4550 2900
+F 0 "U?" H 4550 3581 50  0000 C CNN
+F 1 "RFM95W-915S2" H 4550 3490 50  0000 C CNN
+F 2 "" H 1250 4550 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 1250 4550 50  0001 C CNN
+	1    4550 2900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
