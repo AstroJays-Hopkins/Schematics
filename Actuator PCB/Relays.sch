@@ -38,17 +38,6 @@ F 3 "" H 5050 1550 50  0001 C CNN
 	1    5050 1550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Isolator:LTV-827S U?
-U 1 1 5E537961
-P 4600 1700
-F 0 "U?" H 4600 2025 50  0000 C CNN
-F 1 "LTV-827S" H 4600 1934 50  0000 C CNN
-F 2 "Package_DIP:SMDIP-8_W9.53mm" H 4600 1400 50  0001 C CNN
-F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 3800 2250 50  0001 C CNN
-	1    4600 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 2500 5050 2400
 Wire Wire Line
@@ -159,17 +148,6 @@ F 1 "+12V" H 5065 3323 50  0000 C CNN
 F 2 "" H 5050 3150 50  0001 C CNN
 F 3 "" H 5050 3150 50  0001 C CNN
 	1    5050 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Isolator:LTV-827S U?
-U 1 1 5E53BFE2
-P 4600 3300
-F 0 "U?" H 4600 3625 50  0000 C CNN
-F 1 "LTV-827S" H 4600 3534 50  0000 C CNN
-F 2 "Package_DIP:SMDIP-8_W9.53mm" H 4600 3000 50  0001 C CNN
-F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 3800 3850 50  0001 C CNN
-	1    4600 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -293,17 +271,6 @@ F 1 "+12V" H 5065 4923 50  0000 C CNN
 F 2 "" H 5050 4750 50  0001 C CNN
 F 3 "" H 5050 4750 50  0001 C CNN
 	1    5050 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Isolator:LTV-827S U?
-U 1 1 5E5423F9
-P 4600 4900
-F 0 "U?" H 4600 5225 50  0000 C CNN
-F 1 "LTV-827S" H 4600 5134 50  0000 C CNN
-F 2 "Package_DIP:SMDIP-8_W9.53mm" H 4600 4600 50  0001 C CNN
-F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 3800 5450 50  0001 C CNN
-	1    4600 4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -437,4 +404,37 @@ Wire Wire Line
 	5050 1800 5050 2000
 Wire Wire Line
 	5050 5000 5050 5200
+$Comp
+L Isolator:LTV-847 U?
+U 1 1 5E58B315
+P 4600 1700
+F 0 "U?" H 4600 2025 50  0000 C CNN
+F 1 "LTV-847" H 4600 1934 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 4400 1500 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS-70-96-0016/LTV-8X7%20series.PDF" H 4600 1700 50  0001 L CNN
+	1    4600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:LTV-847 U?
+U 2 1 5E58BEBA
+P 4600 3300
+F 0 "U?" H 4600 3625 50  0000 C CNN
+F 1 "LTV-847" H 4600 3534 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 4400 3100 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS-70-96-0016/LTV-8X7%20series.PDF" H 4600 3300 50  0001 L CNN
+	2    4600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:LTV-847 U?
+U 3 1 5E58C992
+P 4600 4900
+F 0 "U?" H 4600 5225 50  0000 C CNN
+F 1 "LTV-847" H 4600 5134 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 4400 4700 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS-70-96-0016/LTV-8X7%20series.PDF" H 4600 4900 50  0001 L CNN
+	3    4600 4900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
