@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name TLP291-4_TP_E_)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/TLP291-4_TP_E_.lib)(options "")(descr ""))
+)
