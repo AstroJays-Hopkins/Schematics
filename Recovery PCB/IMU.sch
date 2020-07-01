@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Recovery PCB-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -98,7 +98,7 @@ P 6050 3550
 F 0 "U5" H 6050 4431 50  0000 C CNN
 F 1 "BNO055" H 6050 4340 50  0000 C CNN
 F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 6300 2900 50  0001 L CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST_BNO055_DS000_14.pdf" H 6050 3750 50  0001 C CNN
+F 3 "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bno055-ds000.pdf" H 6050 3750 50  0001 C CNN
 	1    6050 3550
 	1    0    0    -1  
 $EndComp
