@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name TLP291-4_TP_E_)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/TLP291-4_TP_E_.lib)(options "")(descr ""))
+  (lib (name IFX007TAUMA1)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/IFX007TAUMA1.lib)(options "")(descr ""))
 )
