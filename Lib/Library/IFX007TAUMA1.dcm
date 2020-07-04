@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IFX007TAUMA1
+D High Current PN Half Bridge with Integrated Driver, 40V, 55A, TO-263-7
+K Gate Drivers Motor Control Bridges
+F https://www.mouser.com/datasheet/2/196/Infineon-IFX007T-DS-v01_00-EN-1504866.pdf
+$ENDCMP
+#
+#End Doc Library
