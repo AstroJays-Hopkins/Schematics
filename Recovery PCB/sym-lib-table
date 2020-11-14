@@ -2,4 +2,6 @@
   (lib (name BMP388)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/BMP388.lib)(options "")(descr ""))
   (lib (name ADXL377)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/ADXL377.lib)(options "")(descr ""))
   (lib (name MEM2075-00-140-01-A)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/MEM2075-00-140-01-A.lib)(options "")(descr ""))
+  (lib (name TLP291-4_TP_E_)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/TLP291-4_TP_E_.lib)(options "")(descr ""))
+  (lib (name recovery-custom)(type Legacy)(uri "/home/benny/homeworks/jhu-3/misc/astrojays/Schematics/Recovery PCB/recovery-custom.lib")(options "")(descr ""))
 )
