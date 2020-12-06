@@ -91,10 +91,10 @@ $EndComp
 Wire Wire Line
 	5950 4450 5950 4600
 $Comp
-L Sensor_Motion:BNO055 U5
+L Sensor_Motion:BNO055 U6
 U 1 1 5DF00E39
 P 6050 3550
-F 0 "U5" H 6050 4431 50  0000 C CNN
+F 0 "U6" H 6050 4431 50  0000 C CNN
 F 1 "BNO055" H 6050 4340 50  0000 C CNN
 F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 6300 2900 50  0001 L CNN
 F 3 "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bno055-ds000.pdf" H 6050 3750 50  0001 C CNN
@@ -266,7 +266,7 @@ U 1 1 5DF0AC45
 P 6700 3300
 F 0 "Y2" V 6654 3431 50  0000 L CNN
 F 1 "32.768k" V 6745 3431 50  0000 L CNN
-F 2 "" H 6700 3300 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 6700 3300 50  0001 C CNN
 F 3 "~" H 6700 3300 50  0001 C CNN
 	1    6700 3300
 	0    1    1    0   

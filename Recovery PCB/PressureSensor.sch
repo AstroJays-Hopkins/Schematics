@@ -82,10 +82,10 @@ Text HLabel 5200 3800 3    50   Input ~ 0
 SCL
 Connection ~ 6400 3300
 $Comp
-L Sensor_Pressure:MS5607-02BA U2
+L Sensor_Pressure:MS5607-02BA U3
 U 1 1 5DEDE483
 P 5950 3700
-F 0 "U2" H 5900 4250 50  0000 L CNN
+F 0 "U3" H 5900 4250 50  0000 L CNN
 F 1 "MS5607-02BA" H 5700 4150 50  0000 L CNN
 F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 5950 3700 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS5607-02BA03%7FB2%7Fpdf%7FEnglish%7FENG_DS_MS5607-02BA03_B2.pdf%7FCAT-BLPS0035" H 5950 3700 50  0001 C CNN

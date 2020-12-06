@@ -54,7 +54,7 @@ U 1 1 5E27B68E
 P 5400 2550
 F 0 "Y1" V 5354 2681 50  0000 L CNN
 F 1 "32.768kHz" V 5445 2681 50  0000 L CNN
-F 2 "" H 5400 2550 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 5400 2550 50  0001 C CNN
 F 3 "~" H 5400 2550 50  0001 C CNN
 	1    5400 2550
 	0    1    1    0   
@@ -136,7 +136,7 @@ U 1 1 5E2E1A9C
 P 5450 6350
 F 0 "SW1" V 5496 6302 50  0000 R CNN
 F 1 "SW_Push" V 5405 6302 50  0000 R CNN
-F 2 "" H 5450 6550 50  0001 C CNN
+F 2 "Parts:SW_SPST_PTS815" H 5450 6550 50  0001 C CNN
 F 3 "" H 5450 6550 50  0001 C CNN
 	1    5450 6350
 	0    -1   -1   0   
@@ -282,7 +282,7 @@ U 1 1 5E2E97C8
 P 6650 1050
 F 0 "L1" H 6650 1265 50  0000 C CNN
 F 1 "10uH" H 6650 1174 50  0000 C CNN
-F 2 "" H 6650 1050 50  0001 C CNN
+F 2 "Inductor_SMD:L_1008_2520Metric" H 6650 1050 50  0001 C CNN
 F 3 "~" H 6650 1050 50  0001 C CNN
 	1    6650 1050
 	1    0    0    -1  
@@ -300,7 +300,7 @@ U 1 1 5E2EAF0E
 P 7100 1050
 F 0 "FB1" V 6863 1050 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" V 6954 1050 50  0000 C CNN
-F 2 "" V 7030 1050 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 7030 1050 50  0001 C CNN
 F 3 "~" H 7100 1050 50  0001 C CNN
 	1    7100 1050
 	0    1    1    0   
@@ -532,7 +532,7 @@ U 1 1 5E5342FD
 P 4550 3400
 F 0 "J1" H 4658 3681 50  0000 C CNN
 F 1 "Conn_01x04_Male" H 4658 3590 50  0000 C CNN
-F 2 "" H 4550 3400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4550 3400 50  0001 C CNN
 F 3 "~" H 4550 3400 50  0001 C CNN
 	1    4550 3400
 	1    0    0    -1  
@@ -540,10 +540,6 @@ $EndComp
 Connection ~ 5300 3000
 Wire Wire Line
 	5000 3000 5300 3000
-Text Label 2950 3150 2    50   ~ 0
-SDA
-Text Label 2950 3250 2    50   ~ 0
-SCL
 $Sheet
 S 1450 2650 550  450 
 U 5DF00598
@@ -677,21 +673,14 @@ S 3100 2700 850  750
 U 5E2DF1A9
 F0 "gps-module" 50
 F1 "gps-module.sch" 50
-F2 "RX" I L 3100 3000 50 
-F3 "TX" O L 3100 2900 50 
-F4 "GPS_SDA" B L 3100 3150 50 
-F5 "GPS_SCL" I L 3100 3250 50 
+F2 "GPS_SDA" B L 3100 3150 50 
+F3 "GPS_SCL" I L 3100 3250 50 
+F4 "~RST" I L 3100 2950 50 
 $EndSheet
 Text Label 5950 4900 2    50   ~ 0
 BUZZER
 Wire Wire Line
 	5950 4400 6100 4400
-Wire Wire Line
-	3100 2900 2950 2900
-Wire Wire Line
-	3100 3000 2950 3000
-NoConn ~ 2950 2900
-NoConn ~ 2950 3000
 Connection ~ 2100 5600
 Wire Wire Line
 	1750 5600 2100 5600
@@ -758,24 +747,13 @@ U 1 1 5DEFD3F0
 P 2550 5000
 F 0 "BZ1" H 2702 5029 50  0000 L CNN
 F 1 "Buzzer" H 2702 4938 50  0000 L CNN
-F 2 "" V 2525 5100 50  0001 C CNN
+F 2 "Buzzer_Beeper:Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm" V 2525 5100 50  0001 C CNN
 F 3 "~" V 2525 5100 50  0001 C CNN
 	1    2550 5000
 	1    0    0    -1  
 $EndComp
 Text Notes 4400 3050 0    50   ~ 0
 UART header 
-$Comp
-L recovery-custom:MIC5528-3.3YMT-TR U?
-U 1 1 5EFFFA85
-P 9750 3150
-F 0 "U?" H 9750 3517 50  0000 C CNN
-F 1 "MIC5528-3.3YMT-TR" H 9750 3426 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TDFN-6-1.2x1.2" H 9750 2750 50  0001 C CNN
-F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en580311" H 9500 3400 50  0001 C CNN
-	1    9750 3150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C10
 U 1 1 5F00EE93
@@ -844,7 +822,7 @@ U 1 1 5F04A0E6
 P 10350 1900
 F 0 "J3" H 10430 1892 50  0000 L CNN
 F 1 "Conn_01x02" H 10430 1801 50  0000 L CNN
-F 2 "" H 10350 1900 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 10350 1900 50  0001 C CNN
 F 3 "~" H 10350 1900 50  0001 C CNN
 	1    10350 1900
 	1    0    0    -1  
@@ -937,7 +915,7 @@ U 1 1 5F06332F
 P 9850 1800
 F 0 "SW2" H 9850 2085 50  0000 C CNN
 F 1 "SW_SPDT" H 9850 1994 50  0000 C CNN
-F 2 "" H 9850 1800 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 9850 1800 50  0001 C CNN
 F 3 "" H 9850 1800 50  0001 C CNN
 	1    9850 1800
 	1    0    0    -1  
@@ -952,8 +930,6 @@ Text Notes 3050 4350 0    50   ~ 0
 SERCOM assignments: \nSERCOM0: UART to outside world\n  PAD[2] = Tx; PAD[3] = Rx\nSERCOM2: SPI \n  PAD[0] = MISO; PAD[2] = MOSI; PAD[3] = CLK\nSERCOM3: I2C\n  PAD[0] = SDA; PAD[1] = SCL\n
 Text Label 5950 4400 2    50   ~ 0
 SD_CS
-Wire Wire Line
-	8100 2400 8300 2400
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5F0B5A3F
@@ -1227,4 +1203,37 @@ Wire Wire Line
 	5250 3500 4750 3500
 Text Notes 9150 5600 0    50   ~ 0
 Observe the variegated selection of electroflora \nassembled presently for your viewing edification.
+NoConn ~ 6100 2600
+NoConn ~ 6100 2700
+NoConn ~ 6100 2800
+NoConn ~ 6100 3200
+NoConn ~ 6100 3300
+NoConn ~ 6100 3700
+NoConn ~ 6100 4300
+NoConn ~ 6100 4500
+NoConn ~ 6100 4800
+NoConn ~ 8100 2500
+NoConn ~ 8100 2600
+NoConn ~ 8100 2700
+NoConn ~ 8100 3000
+NoConn ~ 8100 3100
+Text Label 2950 3250 2    50   ~ 0
+SCL
+Text Label 2950 3150 2    50   ~ 0
+SDA
+NoConn ~ 8100 2400
+Wire Wire Line
+	3100 2950 2950 2950
+NoConn ~ 2950 2950
+$Comp
+L recovery-custom:MIC5528-3.3YMT-TR U2
+U 1 1 5EFFFA85
+P 9750 3150
+F 0 "U2" H 9750 3517 50  0000 C CNN
+F 1 "MIC5528-3.3YMT-TR" H 9750 3426 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TDFN-6-1.2x1.2" H 9750 2750 50  0001 C CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en580311" H 9500 3400 50  0001 C CNN
+	1    9750 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
