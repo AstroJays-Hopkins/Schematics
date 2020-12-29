@@ -45,17 +45,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 6000 2800 50  0001
 $EndComp
 Wire Wire Line
 	5050 3100 5200 3100
-$Comp
-L Device:D D4
-U 1 1 5E58FAD9
-P 5050 2800
-F 0 "D4" V 5004 2879 50  0000 L CNN
-F 1 "D" V 5095 2879 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 5050 2800 50  0001 C CNN
-F 3 "~" H 5050 2800 50  0001 C CNN
-	1    5050 2800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5050 2950 5050 3100
 $Comp
@@ -69,8 +58,6 @@ F 3 "" H 5050 3100 50  0001 C CNN
 	1    5050 3100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 2500 5800 2500
 Wire Wire Line
 	5500 3100 5800 3100
 $Comp
@@ -107,8 +94,6 @@ F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12858&prodName=TLP2
 	1    4400 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 2500 5050 2650
 $Comp
 L Device:R_US R8
 U 1 1 5E65853B
@@ -120,12 +105,9 @@ F 3 "~" H 4700 2650 50  0001 C CNN
 	1    4700 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4700 2500 5050 2500
 Connection ~ 4700 2500
-Connection ~ 5050 2500
 Text HLabel 4000 3950 0    50   Input ~ 0
-IN1
+IN2
 Wire Wire Line
 	4000 3950 4100 3950
 Wire Wire Line
@@ -156,17 +138,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 6000 4450 50  0001
 $EndComp
 Wire Wire Line
 	5050 4750 5200 4750
-$Comp
-L Device:D D5
-U 1 1 5E662736
-P 5050 4450
-F 0 "D5" V 5004 4529 50  0000 L CNN
-F 1 "D" V 5095 4529 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 5050 4450 50  0001 C CNN
-F 3 "~" H 5050 4450 50  0001 C CNN
-	1    5050 4450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5050 4600 5050 4750
 $Comp
@@ -180,8 +151,6 @@ F 3 "" H 5050 4750 50  0001 C CNN
 	1    5050 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 4150 5800 4150
 Wire Wire Line
 	5500 4750 5800 4750
 $Comp
@@ -207,8 +176,6 @@ F 3 "~" H 5350 4750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 5050 4750
-Wire Wire Line
-	5050 4150 5050 4300
 $Comp
 L Device:R_US R9
 U 1 1 5E662768
@@ -220,9 +187,6 @@ F 3 "~" H 4700 4300 50  0001 C CNN
 	1    4700 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4700 4150 5050 4150
-Connection ~ 5050 4150
 Wire Wire Line
 	4100 2500 4000 2500
 Wire Wire Line
@@ -371,4 +335,40 @@ Text Notes 5200 3300 0    50   ~ 0
 I am calculating this resistor value. Please hold.
 Text Notes 5250 4950 0    50   ~ 0
 I am calculating this resistor value. Please hold.
+Wire Wire Line
+	4700 4150 5050 4150
+Wire Wire Line
+	5050 4150 5800 4150
+Connection ~ 5050 4150
+Wire Wire Line
+	5050 4150 5050 4300
+$Comp
+L Device:D D5
+U 1 1 5E662736
+P 5050 4450
+F 0 "D5" V 5004 4529 50  0000 L CNN
+F 1 "D" V 5095 4529 50  0000 L CNN
+F 2 "Diode_SMD:D_SOT-23_ANK" H 5050 4450 50  0001 C CNN
+F 3 "~" H 5050 4450 50  0001 C CNN
+	1    5050 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 2500 5050 2500
+Wire Wire Line
+	5050 2500 5800 2500
+Connection ~ 5050 2500
+Wire Wire Line
+	5050 2500 5050 2650
+$Comp
+L Device:D D4
+U 1 1 5E58FAD9
+P 5050 2800
+F 0 "D4" V 5004 2879 50  0000 L CNN
+F 1 "D" V 5095 2879 50  0000 L CNN
+F 2 "Diode_SMD:D_SOT-23_ANK" H 5050 2800 50  0001 C CNN
+F 3 "~" H 5050 2800 50  0001 C CNN
+	1    5050 2800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
