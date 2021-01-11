@@ -681,62 +681,6 @@ Text Label 5950 4900 2    50   ~ 0
 BUZZER
 Wire Wire Line
 	5950 4400 6100 4400
-Connection ~ 2100 5600
-Wire Wire Line
-	1750 5600 2100 5600
-Connection ~ 1750 5300
-Wire Wire Line
-	1250 5300 1450 5300
-$Comp
-L power:GND #PWR01
-U 1 1 5E5B9E4D
-P 2100 5600
-F 0 "#PWR01" H 2100 5350 50  0001 C CNN
-F 1 "GND" H 2105 5427 50  0000 C CNN
-F 2 "" H 2100 5600 50  0001 C CNN
-F 3 "" H 2100 5600 50  0001 C CNN
-	1    2100 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 5100 2450 5100
-$Comp
-L Device:R_US R1
-U 1 1 5E5C636B
-P 1600 5300
-F 0 "R1" V 1395 5300 50  0000 C CNN
-F 1 "1k" V 1486 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1640 5290 50  0001 C CNN
-F 3 "~" H 1600 5300 50  0001 C CNN
-	1    1600 5300
-	0    1    1    0   
-$EndComp
-$Comp
-L Transistor_FET:BSS138 Q1
-U 1 1 5E5FD8D0
-P 2000 5300
-F 0 "Q1" H 2204 5346 50  0000 L CNN
-F 1 "BSS138" H 2204 5255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2200 5225 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 2000 5300 50  0001 L CNN
-	1    2000 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 5500 2100 5600
-Wire Wire Line
-	1750 5300 1800 5300
-$Comp
-L Device:R_US R2
-U 1 1 5E61BC5D
-P 1750 5450
-F 0 "R2" H 1818 5496 50  0000 L CNN
-F 1 "1M" H 1818 5405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1790 5440 50  0001 C CNN
-F 3 "~" H 1750 5450 50  0001 C CNN
-	1    1750 5450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2450 4900 2450 4800
 Text Label 1250 5300 2    50   ~ 0
@@ -1225,6 +1169,9 @@ F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en580311" H 
 	1    9750 3150
 	1    0    0    -1  
 $EndComp
+Connection ~ 1750 5300
+Wire Wire Line
+	1250 5300 1750 5300
 $Comp
 L Device:Buzzer BZ1
 U 1 1 5DEFD3F0
@@ -1236,4 +1183,46 @@ F 3 "~" V 2525 5100 50  0001 C CNN
 	1    2550 5000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5E61BC5D
+P 1750 5450
+F 0 "R2" H 1818 5496 50  0000 L CNN
+F 1 "1M" H 1818 5405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1790 5440 50  0001 C CNN
+F 3 "~" H 1750 5450 50  0001 C CNN
+	1    1750 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 5300 1800 5300
+Wire Wire Line
+	2100 5500 2100 5600
+$Comp
+L Transistor_FET:BSS138 Q1
+U 1 1 5E5FD8D0
+P 2000 5300
+F 0 "Q1" H 2204 5346 50  0000 L CNN
+F 1 "BSS138" H 2204 5255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2200 5225 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 2000 5300 50  0001 L CNN
+	1    2000 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5100 2450 5100
+$Comp
+L power:GND #PWR01
+U 1 1 5E5B9E4D
+P 2100 5600
+F 0 "#PWR01" H 2100 5350 50  0001 C CNN
+F 1 "GND" H 2105 5427 50  0000 C CNN
+F 2 "" H 2100 5600 50  0001 C CNN
+F 3 "" H 2100 5600 50  0001 C CNN
+	1    2100 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 5600 2100 5600
+Connection ~ 2100 5600
 $EndSCHEMATC
