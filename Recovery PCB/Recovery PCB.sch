@@ -193,12 +193,12 @@ $EndComp
 $Comp
 L Device:C C6
 U 1 1 5E2E3FFA
-P 6450 1650
-F 0 "C6" H 6300 1650 50  0000 C CNN
-F 1 "100n" H 6300 1550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6488 1500 50  0001 C CNN
-F 3 "~" H 6450 1650 50  0001 C CNN
-	1    6450 1650
+P 6150 1650
+F 0 "C6" H 6000 1650 50  0000 C CNN
+F 1 "100n" H 6000 1550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6188 1500 50  0001 C CNN
+F 3 "~" H 6150 1650 50  0001 C CNN
+	1    6150 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -215,12 +215,12 @@ $EndComp
 $Comp
 L Device:C C4
 U 1 1 5E2E7512
-P 6150 1650
-F 0 "C4" H 6250 1650 50  0000 L CNN
-F 1 "10u" H 6250 1550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6188 1500 50  0001 C CNN
-F 3 "~" H 6150 1650 50  0001 C CNN
-	1    6150 1650
+P 5850 1650
+F 0 "C4" H 5950 1650 50  0000 L CNN
+F 1 "10u" H 5950 1550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5888 1500 50  0001 C CNN
+F 3 "~" H 5850 1650 50  0001 C CNN
+	1    5850 1650
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -433,10 +433,6 @@ Wire Wire Line
 	5050 3300 5050 3250
 Wire Wire Line
 	4750 3300 5050 3300
-Wire Wire Line
-	6100 3500 5250 3500
-Wire Wire Line
-	4750 3400 5250 3400
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5E5342FD
@@ -1014,31 +1010,6 @@ Wire Wire Line
 	10300 5250 10550 5250
 Text Label 10550 5250 0    50   ~ 0
 IMU_INT
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5F1726AB
-P 5250 3400
-F 0 "TP3" H 5308 3520 50  0000 L CNN
-F 1 "TestPoint" H 5308 3429 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5450 3400 50  0001 C CNN
-F 3 "~" H 5450 3400 50  0001 C CNN
-	1    5250 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5F17276B
-P 5250 3500
-F 0 "TP2" H 5192 3527 50  0000 R CNN
-F 1 "TestPoint" H 5192 3618 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5450 3500 50  0001 C CNN
-F 3 "~" H 5450 3500 50  0001 C CNN
-	1    5250 3500
-	-1   0    0    1   
-$EndComp
-Connection ~ 5250 3500
-Wire Wire Line
-	5250 3500 4750 3500
 Text Notes 9150 5600 0    50   ~ 0
 Observe the variegated selection of electroflora \nassembled presently for your viewing edification.
 NoConn ~ 6100 2600
@@ -1143,9 +1114,6 @@ Connection ~ 5400 2700
 Wire Wire Line
 	5250 2400 5400 2400
 Connection ~ 5400 2400
-Connection ~ 5250 3400
-Wire Wire Line
-	5250 3400 6100 3400
 $Comp
 L power:+3.3V #PWR08
 U 1 1 5E2E6BFA
@@ -1182,12 +1150,12 @@ $EndComp
 $Comp
 L power:GND #PWR0120
 U 1 1 601D693E
-P 6450 1800
-F 0 "#PWR0120" H 6450 1550 50  0001 C CNN
-F 1 "GND" H 6455 1627 50  0000 C CNN
-F 2 "" H 6450 1800 50  0001 C CNN
-F 3 "" H 6450 1800 50  0001 C CNN
-	1    6450 1800
+P 6150 1800
+F 0 "#PWR0120" H 6150 1550 50  0001 C CNN
+F 1 "GND" H 6155 1627 50  0000 C CNN
+F 2 "" H 6150 1800 50  0001 C CNN
+F 3 "" H 6150 1800 50  0001 C CNN
+	1    6150 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1197,12 +1165,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0121
 U 1 1 60212EB4
-P 6150 1800
-F 0 "#PWR0121" H 6150 1550 50  0001 C CNN
-F 1 "GND" H 6155 1627 50  0000 C CNN
-F 2 "" H 6150 1800 50  0001 C CNN
-F 3 "" H 6150 1800 50  0001 C CNN
-	1    6150 1800
+P 5850 1800
+F 0 "#PWR0121" H 5850 1550 50  0001 C CNN
+F 1 "GND" H 5855 1627 50  0000 C CNN
+F 2 "" H 5850 1800 50  0001 C CNN
+F 3 "" H 5850 1800 50  0001 C CNN
+	1    5850 1800
 	1    0    0    -1  
 $EndComp
 Connection ~ 7000 1400
@@ -1245,15 +1213,12 @@ Wire Wire Line
 Wire Wire Line
 	7000 1350 7000 1400
 Wire Wire Line
+	5850 1500 5850 1400
+Wire Wire Line
 	6150 1500 6150 1400
-Connection ~ 6900 1400
+Connection ~ 6150 1400
 Wire Wire Line
-	6450 1500 6450 1400
-Connection ~ 6450 1400
-Wire Wire Line
-	6450 1400 6900 1400
-Wire Wire Line
-	6150 1400 6450 1400
+	5850 1400 6150 1400
 Wire Wire Line
 	7000 1400 7000 2100
 Connection ~ 7850 1400
@@ -1262,4 +1227,40 @@ Wire Wire Line
 Wire Wire Line
 	950  5300 1250 5300
 Connection ~ 1250 5300
+Wire Wire Line
+	4750 3400 6100 3400
+Wire Wire Line
+	4750 3500 6100 3500
+Text Label 5100 3400 0    50   ~ 0
+UART_TX
+Text Label 5100 3500 0    50   ~ 0
+UART_RX
+$Comp
+L power:GND #PWR?
+U 1 1 601436A5
+P 6450 1800
+F 0 "#PWR?" H 6450 1550 50  0001 C CNN
+F 1 "GND" H 6455 1627 50  0000 C CNN
+F 2 "" H 6450 1800 50  0001 C CNN
+F 3 "" H 6450 1800 50  0001 C CNN
+	1    6450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601436AB
+P 6450 1650
+F 0 "C?" H 6300 1650 50  0000 C CNN
+F 1 "100n" H 6300 1750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6488 1500 50  0001 C CNN
+F 3 "~" H 6450 1650 50  0001 C CNN
+	1    6450 1650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6150 1400 6900 1400
+Connection ~ 6900 1400
+Wire Wire Line
+	6450 1500 6750 1500
+Connection ~ 6750 1500
 $EndSCHEMATC
