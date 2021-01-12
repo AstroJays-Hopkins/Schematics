@@ -412,7 +412,7 @@ U 1 1 5DF00E39
 P 6050 3550
 F 0 "U5" H 5600 2900 50  0000 C CNN
 F 1 "BNO055" H 5700 2800 50  0000 C CNN
-F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 6300 2900 50  0001 L CNN
+F 2 "Parts:LGA-28_5.2x3.8mm_P0.5mm" H 6300 2900 50  0001 L CNN
 F 3 "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bno055-ds000.pdf" H 6050 3750 50  0001 C CNN
 	1    6050 3550
 	1    0    0    -1  
