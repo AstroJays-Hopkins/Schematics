@@ -1,4 +1,4 @@
-update=Mon 11 Jan 2021 04:54:58 PM CST
+update=1/11/2021 8:31:21 PM
 version=1
 last_client=kicad
 [general]
@@ -32,18 +32,19 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.2
+MinTrackWidth=0.13
 MinViaDiameter=0.4
 MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
-TrackWidth2=0.2032
-TrackWidth3=0.254
-TrackWidth4=0.3048
-TrackWidth5=0.508
-TrackWidth6=1.27
+TrackWidth2=0.1524
+TrackWidth3=0.2032
+TrackWidth4=0.254
+TrackWidth5=0.3048
+TrackWidth6=0.508
+TrackWidth7=1.27
 ViaDiameter1=0.6
 ViaDrill1=0.35
 ViaDiameter2=0.6
@@ -256,6 +257,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
+Name=Coplanar Wave Guide 50 Ohm
+Clearance=0.2
+TrackWidth=0.325628
+ViaDiameter=0.6
+ViaDrill=0.35
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
 Name=Local Power
 Clearance=0.2
 TrackWidth=0.254
@@ -266,9 +278,9 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/2]
+[pcbnew/Netclasses/3]
 Name=Power
-Clearance=0.25
+Clearance=0.2
 TrackWidth=0.3048
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -277,10 +289,10 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/3]
+[pcbnew/Netclasses/4]
 Name=RF 50 Ohm
 Clearance=0.2
-TrackWidth=0.25
+TrackWidth=0.319024
 ViaDiameter=0.6
 ViaDrill=0.35
 uViaDiameter=0.3
@@ -288,7 +300,7 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/4]
+[pcbnew/Netclasses/5]
 Name=Signal
 Clearance=0.16
 TrackWidth=0.2032
