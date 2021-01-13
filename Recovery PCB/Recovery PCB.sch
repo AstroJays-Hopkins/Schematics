@@ -14,21 +14,21 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1450 1300 550  250 
+S 1250 1300 550  250 
 U 5DEC0147
 F0 "PressureSensor" 50
 F1 "PressureSensor.sch" 50
-F2 "SDA" I L 1450 1350 50 
-F3 "SCL" I L 1450 1450 50 
+F2 "SCL" I L 1250 1350 50 
+F3 "SDA" B L 1250 1450 50 
 $EndSheet
 $Sheet
-S 1450 1900 550  350 
+S 1250 1900 550  350 
 U 5DED66E9
 F0 "Accelerometer" 50
 F1 "Accelerometer.sch" 50
-F2 "Xout" O R 2000 1950 50 
-F3 "Yout" O R 2000 2050 50 
-F4 "Zout" O R 2000 2150 50 
+F2 "Xout" O R 1800 1950 50 
+F3 "Yout" O R 1800 2050 50 
+F4 "Zout" O R 1800 2150 50 
 $EndSheet
 $Sheet
 S 3200 1300 550  250 
@@ -39,14 +39,14 @@ F2 "IN2" I L 3200 1450 50
 F3 "IN1" I L 3200 1350 50 
 $EndSheet
 $Sheet
-S 3200 1900 550  500 
+S 3200 1900 700  400 
 U 5DF50C3B
 F0 "microSD" 50
 F1 "microSD.sch" 50
 F2 "SD_CS" I L 3200 2000 50 
 F3 "SD_CLK" I L 3200 2100 50 
 F4 "SD_DI" I L 3200 2200 50 
-F5 "SD_DO" O L 3200 2300 50 
+F5 "SD_DO" O R 3900 2000 50 
 $EndSheet
 $Comp
 L Device:Crystal Y1
@@ -385,22 +385,22 @@ Wire Wire Line
 	8100 2800 8300 2800
 Wire Wire Line
 	8100 2900 8300 2900
-Text Label 1300 1350 2    50   ~ 0
+Text Label 1100 1450 2    50   ~ 0
 SDA
-Text Label 1300 1450 2    50   ~ 0
+Text Label 1100 1350 2    50   ~ 0
 SCL
 Wire Wire Line
-	1300 1350 1450 1350
+	1100 1450 1250 1450
 Wire Wire Line
-	1300 1450 1450 1450
-Text Label 1300 2900 2    50   ~ 0
+	1100 1350 1250 1350
+Text Label 1100 2700 2    50   ~ 0
 SDA
-Text Label 1300 2800 2    50   ~ 0
+Text Label 1100 2600 2    50   ~ 0
 SCL
 Wire Wire Line
-	1300 2800 1450 2800
+	1100 2600 1250 2600
 Wire Wire Line
-	1300 2900 1450 2900
+	1100 2700 1250 2700
 Wire Wire Line
 	5950 3600 6100 3600
 $Comp
@@ -445,24 +445,24 @@ F 3 "~" H 4550 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 1450 2650 550  450 
+S 1250 2500 550  450 
 U 5DF00598
 F0 "IMU" 50
 F1 "IMU.sch" 50
-F2 "INT" I L 1450 2700 50 
-F3 "SCL" I L 1450 2800 50 
-F4 "SDA" I L 1450 2900 50 
-F5 "nRESET" I L 1450 3000 50 
+F2 "SCL" I L 1250 2600 50 
+F3 "nRESET" I L 1250 2850 50 
+F4 "INT" O R 1800 2600 50 
+F5 "SDA" B L 1250 2700 50 
 $EndSheet
-Text Label 1300 3000 2    50   ~ 0
+Text Label 1100 2850 2    50   ~ 0
 IMU_RESET
 Wire Wire Line
-	1450 3000 1300 3000
+	1250 2850 1100 2850
 Text Label 5950 5000 2    50   ~ 0
 IMU_RESET
 Wire Wire Line
-	1450 2700 1300 2700
-Text Label 1300 2700 2    50   ~ 0
+	1800 2600 1950 2600
+Text Label 1950 2600 0    50   ~ 0
 IMU_INT
 Text Label 5950 2900 2    50   ~ 0
 Xout
@@ -476,60 +476,60 @@ Wire Wire Line
 	5950 3000 6100 3000
 Wire Wire Line
 	5950 3100 6100 3100
-Text Label 2300 1950 0    50   ~ 0
+Text Label 2100 1950 0    50   ~ 0
 Xout
-Text Label 2300 2050 0    50   ~ 0
+Text Label 2100 2050 0    50   ~ 0
 Yout
-Text Label 2300 2150 0    50   ~ 0
+Text Label 2100 2150 0    50   ~ 0
 Zout
 Wire Wire Line
-	2000 1950 2300 1950
+	1800 1950 2100 1950
 Wire Wire Line
-	2000 2050 2300 2050
+	1800 2050 2100 2050
 Wire Wire Line
-	2000 2150 2300 2150
-Text Label 1200 3650 2    50   ~ 0
+	1800 2150 2100 2150
+Text Label 1050 3350 2    50   ~ 0
 CLK
-Text Label 1200 3750 2    50   ~ 0
+Text Label 1050 3450 2    50   ~ 0
 MOSI
-Text Label 1200 3850 2    50   ~ 0
+Text Label 2600 3350 0    50   ~ 0
 MISO
-Text Label 1200 3950 2    50   ~ 0
+Text Label 1050 3550 2    50   ~ 0
 RADIO_CS
-Text Label 1200 4050 2    50   ~ 0
+Text Label 1050 3750 2    50   ~ 0
 RADIO_RESET
 Wire Wire Line
-	1200 3650 1400 3650
+	1050 3350 1250 3350
 Wire Wire Line
-	1200 3750 1400 3750
+	1050 3450 1250 3450
 Wire Wire Line
-	1200 3850 1400 3850
+	2600 3350 2400 3350
 Wire Wire Line
-	1200 3950 1400 3950
+	1050 3550 1250 3550
 $Sheet
-S 1400 3550 950  700 
+S 1250 3250 1150 600 
 U 5E277237
 F0 "radio-915-lora" 50
 F1 "radio-915-lora.sch" 50
-F2 "RADIO_SCK" I L 1400 3650 50 
-F3 "RADIO_MOSI" I L 1400 3750 50 
-F4 "RADIO_MISO" O L 1400 3850 50 
-F5 "RADIO_SS" I L 1400 3950 50 
-F6 "RADIO_RESET" I L 1400 4050 50 
-F7 "RADIO_DIO0" O L 1400 4150 50 
+F2 "RADIO_SCK" I L 1250 3350 50 
+F3 "RADIO_MOSI" I L 1250 3450 50 
+F4 "RADIO_MISO" O R 2400 3350 50 
+F5 "RADIO_SS" I L 1250 3550 50 
+F6 "RADIO_RESET" I L 1250 3750 50 
+F7 "RADIO_DIO0" O R 2400 3750 50 
 $EndSheet
 Wire Wire Line
-	1200 4050 1400 4050
+	1050 3750 1250 3750
 Text Label 5950 4000 2    50   ~ 0
 RADIO_CS
 Text Label 5950 4100 2    50   ~ 0
 RADIO_RESET
 Text Label 5950 4200 2    50   ~ 0
 RADIO_IO
-Text Label 1200 4150 2    50   ~ 0
+Text Label 2600 3750 0    50   ~ 0
 RADIO_IO
 Wire Wire Line
-	1200 4150 1400 4150
+	2600 3750 2400 3750
 Wire Wire Line
 	5950 4000 6100 4000
 Wire Wire Line
@@ -540,7 +540,7 @@ Text Label 3000 2100 2    50   ~ 0
 CLK
 Text Label 3000 2200 2    50   ~ 0
 MOSI
-Text Label 3000 2300 2    50   ~ 0
+Text Label 4100 2000 0    50   ~ 0
 MISO
 Wire Wire Line
 	3000 2100 3200 2100
@@ -549,7 +549,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 2200 3200 2200
 Wire Wire Line
-	3000 2300 3200 2300
+	4100 2000 3900 2000
 Text Label 3000 2000 2    50   ~ 0
 SD_CS
 Text Label 2950 1350 2    50   ~ 0
@@ -569,17 +569,17 @@ Wire Wire Line
 Wire Wire Line
 	5950 4200 6100 4200
 Wire Wire Line
-	2950 3250 3100 3250
+	3050 2750 3200 2750
 Wire Wire Line
-	2950 3150 3100 3150
+	3050 2650 3200 2650
 $Sheet
-S 3100 2700 850  750 
+S 3200 2550 700  450 
 U 5E2DF1A9
 F0 "gps-module" 50
 F1 "gps-module.sch" 50
-F2 "GPS_SDA" B L 3100 3150 50 
-F3 "GPS_SCL" I L 3100 3250 50 
-F4 "~RST" I L 3100 2950 50 
+F2 "GPS_SDA" B L 3200 2650 50 
+F3 "GPS_SCL" I L 3200 2750 50 
+F4 "~RST" I L 3200 2900 50 
 $EndSheet
 Text Label 5950 4900 2    50   ~ 0
 BUZZER
@@ -596,7 +596,7 @@ L Device:C C10
 U 1 1 5F00EE93
 P 9000 3200
 F 0 "C10" H 9115 3246 50  0000 L CNN
-F 1 "2.2u" H 9115 3155 50  0000 L CNN
+F 1 "1u" H 9115 3155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9038 3050 50  0001 C CNN
 F 3 "~" H 9000 3200 50  0001 C CNN
 	1    9000 3200
@@ -607,7 +607,7 @@ L Device:C C11
 U 1 1 5F00EF43
 P 10350 3200
 F 0 "C11" H 10465 3246 50  0000 L CNN
-F 1 "2.2u" H 10465 3155 50  0000 L CNN
+F 1 "1u" H 10465 3155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10388 3050 50  0001 C CNN
 F 3 "~" H 10350 3200 50  0001 C CNN
 	1    10350 3200
@@ -622,12 +622,6 @@ Wire Wire Line
 Connection ~ 9750 3450
 Wire Wire Line
 	9750 3450 10350 3450
-Wire Wire Line
-	9000 3050 9350 3050
-Wire Wire Line
-	9350 3050 9350 3250
-Wire Wire Line
-	10150 3050 10350 3050
 $Comp
 L power:GND #PWR019
 U 1 1 5F023B13
@@ -1026,22 +1020,22 @@ NoConn ~ 8100 2600
 NoConn ~ 8100 2700
 NoConn ~ 8100 3000
 NoConn ~ 8100 3100
-Text Label 2950 3250 2    50   ~ 0
+Text Label 3050 2750 2    50   ~ 0
 SCL
-Text Label 2950 3150 2    50   ~ 0
+Text Label 3050 2650 2    50   ~ 0
 SDA
 NoConn ~ 8100 2400
 Wire Wire Line
-	3100 2950 2950 2950
-NoConn ~ 2950 2950
+	3200 2900 3050 2900
+NoConn ~ 3050 2900
 $Comp
-L recovery-custom:MIC5528-3.3YMT-TR U1
+L recovery-custom:AP7366-33W5-7 U1
 U 1 1 5EFFFA85
 P 9750 3150
 F 0 "U1" H 9750 3517 50  0000 C CNN
-F 1 "MIC5528-3.3YMT-TR" H 9750 3426 50  0000 C CNN
-F 2 "Package_DFN_QFN:DFN-6-1EP_1.2x1.2mm_P0.4mm_EP0.3x0.94mm_PullBack" H 9750 2750 50  0001 C CNN
-F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en580311" H 9500 3400 50  0001 C CNN
+F 1 "AP7366-33W5-7" H 9750 3426 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9750 2750 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP7366.pdf" H 9500 3400 50  0001 C CNN
 	1    9750 3150
 	1    0    0    -1  
 $EndComp
@@ -1263,4 +1257,13 @@ Connection ~ 6900 1400
 Wire Wire Line
 	6450 1500 6750 1500
 Connection ~ 6750 1500
+Wire Wire Line
+	9000 3050 9400 3050
+Wire Wire Line
+	9400 3050 9400 3200
+Connection ~ 9400 3050
+Wire Wire Line
+	9750 3400 9750 3450
+Wire Wire Line
+	10100 3050 10350 3050
 $EndSCHEMATC

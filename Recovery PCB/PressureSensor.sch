@@ -146,7 +146,7 @@ F 3 "" H 5200 3200 50  0001 C CNN
 	1    5200 3200
 	1    0    0    -1  
 $EndComp
-Text HLabel 4600 3700 0    50   Input ~ 0
+Text HLabel 4600 3700 0    50   BiDi ~ 0
 SDA
 Text HLabel 4600 3800 0    50   Input ~ 0
 SCL

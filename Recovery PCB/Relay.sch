@@ -16,13 +16,13 @@ $EndDescr
 Text HLabel 4250 3350 0    50   Input ~ 0
 IN1
 $Comp
-L Relay:SANYOU_SRD_Form_C K1
+L recovery-custom:G6RL-14-ASI-DC3 K1
 U 1 1 5E651D90
 P 6000 2800
 F 0 "K1" H 6430 2846 50  0000 L CNN
-F 1 "SANYOU_SRD_Form_C" H 6430 2755 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6450 2750 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 6000 2800 50  0001 C CNN
+F 1 "G6RL-14-ASI-DC3" H 6430 2755 50  0000 L CNN
+F 2 "Parts:RELAY_G6RL-1" H 6450 2750 50  0001 L CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6rl.pdf" H 6000 2800 50  0001 C CNN
 	1    6000 2800
 	1    0    0    -1  
 $EndComp
@@ -42,7 +42,7 @@ L Device:R_US R8
 U 1 1 5E590CAC
 P 5350 3150
 F 0 "R8" V 5145 3150 50  0000 C CNN
-F 1 "300" V 5236 3150 50  0000 C CNN
+F 1 "5" V 5236 3150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5390 3140 50  0001 C CNN
 F 3 "~" H 5350 3150 50  0001 C CNN
 	1    5350 3150
@@ -62,13 +62,13 @@ $EndComp
 Text HLabel 4250 5000 0    50   Input ~ 0
 IN2
 $Comp
-L Relay:SANYOU_SRD_Form_C K2
+L recovery-custom:G6RL-14-ASI-DC3 K2
 U 1 1 5E66272F
 P 6000 4450
 F 0 "K2" H 6430 4496 50  0000 L CNN
-F 1 "SANYOU_SRD_Form_C" H 6430 4405 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6450 4400 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 6000 4450 50  0001 C CNN
+F 1 "G6RL-14-ASI-DC3" H 6430 4405 50  0000 L CNN
+F 2 "Parts:RELAY_G6RL-1" H 6450 4400 50  0001 L CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6rl.pdf" H 6000 4450 50  0001 C CNN
 	1    6000 4450
 	1    0    0    -1  
 $EndComp
@@ -77,7 +77,7 @@ L Device:R_US R11
 U 1 1 5E66275A
 P 5350 4800
 F 0 "R11" V 5145 4800 50  0000 C CNN
-F 1 "300" V 5236 4800 50  0000 C CNN
+F 1 "5" V 5236 4800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5390 4790 50  0001 C CNN
 F 3 "~" H 5350 4800 50  0001 C CNN
 	1    5350 4800
@@ -422,4 +422,29 @@ Wire Wire Line
 	5000 1900 4850 1900
 Wire Wire Line
 	4850 1800 5000 1800
+Text Notes 5150 3700 0    50   ~ 0
+Coil resistance: 40Ohms @ 3v3\nI_rated: 0.0733\nI_rated = Vcc/(R_coil+R_limit)\nAt rated voltage, minimal resistance needed
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60045E18
+P 5000 1800
+F 0 "#FLG?" H 5000 1875 50  0001 C CNN
+F 1 "PWR_FLAG" V 5000 1928 50  0000 L CNN
+F 2 "" H 5000 1800 50  0001 C CNN
+F 3 "~" H 5000 1800 50  0001 C CNN
+	1    5000 1800
+	0    1    1    0   
+$EndComp
+Connection ~ 5000 1800
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 6004749E
+P 5000 1900
+F 0 "#FLG?" H 5000 1975 50  0001 C CNN
+F 1 "PWR_FLAG" V 5000 2028 50  0000 L CNN
+F 2 "" H 5000 1900 50  0001 C CNN
+F 3 "~" H 5000 1900 50  0001 C CNN
+	1    5000 1900
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

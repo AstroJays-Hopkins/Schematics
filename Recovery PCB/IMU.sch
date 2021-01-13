@@ -35,7 +35,7 @@ F 3 "~" H 5800 2450 50  0001 C CNN
 	1    5800 2450
 	1    0    0    -1  
 $EndComp
-Text HLabel 5350 3250 0    50   Input ~ 0
+Text HLabel 5350 3250 0    50   Output ~ 0
 INT
 $Comp
 L Device:R_US R16
@@ -94,7 +94,7 @@ Wire Wire Line
 	5450 3850 4300 3850
 Text HLabel 4150 3850 0    50   Input ~ 0
 SCL
-Text HLabel 4150 3750 0    50   Input ~ 0
+Text HLabel 4150 3750 0    50   BiDi ~ 0
 SDA
 $Comp
 L Device:C C20
