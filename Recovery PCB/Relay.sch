@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Recovery PCB-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -425,10 +426,10 @@ Wire Wire Line
 Text Notes 5150 3700 0    50   ~ 0
 Coil resistance: 40Ohms @ 3v3\nI_rated: 0.0733\nI_rated = Vcc/(R_coil+R_limit)\nAt rated voltage, minimal resistance needed
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG0101
 U 1 1 60045E18
 P 5000 1800
-F 0 "#FLG?" H 5000 1875 50  0001 C CNN
+F 0 "#FLG0101" H 5000 1875 50  0001 C CNN
 F 1 "PWR_FLAG" V 5000 1928 50  0000 L CNN
 F 2 "" H 5000 1800 50  0001 C CNN
 F 3 "~" H 5000 1800 50  0001 C CNN
@@ -437,10 +438,10 @@ F 3 "~" H 5000 1800 50  0001 C CNN
 $EndComp
 Connection ~ 5000 1800
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG0102
 U 1 1 6004749E
 P 5000 1900
-F 0 "#FLG?" H 5000 1975 50  0001 C CNN
+F 0 "#FLG0102" H 5000 1975 50  0001 C CNN
 F 1 "PWR_FLAG" V 5000 2028 50  0000 L CNN
 F 2 "" H 5000 1900 50  0001 C CNN
 F 3 "~" H 5000 1900 50  0001 C CNN

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Recovery PCB-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1266,4 +1267,48 @@ Wire Wire Line
 	9750 3400 9750 3450
 Wire Wire Line
 	10100 3050 10350 3050
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 600DBB87
+P 850 7100
+F 0 "H1" H 950 7146 50  0000 L CNN
+F 1 "MountingHole" H 950 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 7100 50  0001 C CNN
+F 3 "~" H 850 7100 50  0001 C CNN
+	1    850  7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 600DC751
+P 850 7300
+F 0 "H2" H 950 7346 50  0000 L CNN
+F 1 "MountingHole" H 950 7255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 7300 50  0001 C CNN
+F 3 "~" H 850 7300 50  0001 C CNN
+	1    850  7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 600E19B8
+P 850 7500
+F 0 "H3" H 950 7546 50  0000 L CNN
+F 1 "MountingHole" H 950 7455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 7500 50  0001 C CNN
+F 3 "~" H 850 7500 50  0001 C CNN
+	1    850  7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 600E6D04
+P 850 7700
+F 0 "H4" H 950 7746 50  0000 L CNN
+F 1 "MountingHole" H 950 7655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 7700 50  0001 C CNN
+F 3 "~" H 850 7700 50  0001 C CNN
+	1    850  7700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

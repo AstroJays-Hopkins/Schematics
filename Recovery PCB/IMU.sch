@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Recovery PCB-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -66,32 +67,6 @@ Wire Wire Line
 Wire Wire Line
 	6650 3850 7150 3850
 NoConn ~ 5450 3550
-Wire Wire Line
-	5450 3750 4600 3750
-$Comp
-L Device:R_US R15
-U 1 1 5DF0FA82
-P 4600 2800
-F 0 "R15" H 4668 2846 50  0000 L CNN
-F 1 "4.7k" H 4668 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4640 2790 50  0001 C CNN
-F 3 "~" H 4600 2800 50  0001 C CNN
-	1    4600 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R14
-U 1 1 5DF109EE
-P 4300 2800
-F 0 "R14" H 4368 2846 50  0000 L CNN
-F 1 "4.7k" H 4368 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4340 2790 50  0001 C CNN
-F 3 "~" H 4300 2800 50  0001 C CNN
-	1    4300 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 3850 4300 3850
 Text HLabel 4150 3850 0    50   Input ~ 0
 SCL
 Text HLabel 4150 3750 0    50   BiDi ~ 0
@@ -247,14 +222,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 3450 4950 3450
 Connection ~ 4950 3450
-Wire Wire Line
-	4600 2600 4600 2650
-Wire Wire Line
-	4300 2600 4300 2650
-Wire Wire Line
-	4600 2950 4600 3750
-Wire Wire Line
-	4300 2950 4300 3850
 $Comp
 L power:GND #PWR072
 U 1 1 600D238E
@@ -319,28 +286,6 @@ F 3 "" H 5400 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR060
-U 1 1 600E9DAA
-P 4600 2600
-F 0 "#PWR060" H 4600 2450 50  0001 C CNN
-F 1 "+3V3" H 4615 2773 50  0000 C CNN
-F 2 "" H 4600 2600 50  0001 C CNN
-F 3 "" H 4600 2600 50  0001 C CNN
-	1    4600 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR059
-U 1 1 600EAA09
-P 4300 2600
-F 0 "#PWR059" H 4300 2450 50  0001 C CNN
-F 1 "+3V3" H 4315 2773 50  0000 C CNN
-F 2 "" H 4300 2600 50  0001 C CNN
-F 3 "" H 4300 2600 50  0001 C CNN
-	1    4300 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR057
 U 1 1 600EB7A7
 P 5950 2300
@@ -387,12 +332,6 @@ Wire Wire Line
 	5200 3950 5200 4350
 Wire Wire Line
 	5450 4350 5450 4050
-Wire Wire Line
-	4150 3750 4600 3750
-Connection ~ 4600 3750
-Wire Wire Line
-	4300 3850 4150 3850
-Connection ~ 4300 3850
 Connection ~ 6150 4250
 Connection ~ 5950 4250
 $Comp
@@ -461,4 +400,8 @@ F 3 "" H 6150 4350 50  0001 C CNN
 	1    6150 4350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4150 3750 5450 3750
+Wire Wire Line
+	4150 3850 5450 3850
 $EndSCHEMATC

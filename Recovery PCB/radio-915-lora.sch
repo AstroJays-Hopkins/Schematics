@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Recovery PCB-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -187,4 +188,6 @@ Text Label 5050 2600 0    50   ~ 0
 LoRa_RF
 Wire Wire Line
 	5050 2600 5450 2600
+Text Notes 2700 2350 0    50   ~ 0
+Active low, do not populate
 $EndSCHEMATC
