@@ -1,4 +1,4 @@
-update=Tue 12 Jan 2021 07:55:25 PM CST
+update=1/23/2021 3:24:02 PM
 version=1
 last_client=kicad
 [general]
@@ -293,7 +293,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/4]
 Name=RF 50 Ohm
 Clearance=0.2
-TrackWidth=0.319024
+TrackWidth=0.325628
 ViaDiameter=0.6
 ViaDrill=0.35
 uViaDiameter=0.3
