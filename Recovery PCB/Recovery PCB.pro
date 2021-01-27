@@ -1,4 +1,4 @@
-update=1/23/2021 3:24:02 PM
+update=1/24/2021 2:55:42 PM
 version=1
 last_client=kicad
 [general]
@@ -302,6 +302,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/5]
+Name=Relay Power
+Clearance=0.5
+TrackWidth=1.5
+ViaDiameter=0.6
+ViaDrill=0.35
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/6]
 Name=Signal
 Clearance=0.16
 TrackWidth=0.2032
