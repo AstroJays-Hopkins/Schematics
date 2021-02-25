@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ATSAMD21G)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/ATSAMD21G.lib)(options "")(descr "ATSAMD21 G series parts, 32-bit ARM M0+ MCU"))
+)

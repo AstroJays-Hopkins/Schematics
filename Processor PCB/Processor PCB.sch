@@ -1,0 +1,565 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "Processor-Power Board"
+Date "2020-02-17"
+Rev "0.0.1a"
+Comp "Astrojays Rocketry Team @ JHU"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E48A085
+P 1150 1150
+F 0 "J?" H 900 1200 50  0000 C CNN
+F 1 "5V_BATT_IN" H 900 1100 50  0000 C CNN
+F 2 "" H 1150 1150 50  0001 C CNN
+F 3 "~" H 1150 1150 50  0001 C CNN
+	1    1150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E48BA09
+P 1350 1000
+F 0 "#PWR?" H 1350 850 50  0001 C CNN
+F 1 "+5V" H 1365 1173 50  0000 C CNN
+F 2 "" H 1350 1000 50  0001 C CNN
+F 3 "" H 1350 1000 50  0001 C CNN
+	1    1350 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E48C21C
+P 1350 1400
+F 0 "#PWR?" H 1350 1150 50  0001 C CNN
+F 1 "GND" H 1355 1227 50  0000 C CNN
+F 2 "" H 1350 1400 50  0001 C CNN
+F 3 "" H 1350 1400 50  0001 C CNN
+	1    1350 1400
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 950  1900 550  550 
+U 5E463647
+F0 "5V Battery Monitor" 50
+F1 "batt_mon.sch" 50
+F2 "V+" O R 1500 2000 50 
+F3 "V-" O R 1500 2100 50 
+F4 "I+" O R 1500 2250 50 
+F5 "I-" O R 1500 2350 50 
+$EndSheet
+Wire Wire Line
+	1350 1000 1350 1150
+Wire Wire Line
+	1350 1250 1350 1400
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E48AD8A
+P 1350 1150
+F 0 "#FLG?" H 1350 1225 50  0001 C CNN
+F 1 "PWR_FLAG" V 1350 1278 50  0000 L CNN
+F 2 "" H 1350 1150 50  0001 C CNN
+F 3 "~" H 1350 1150 50  0001 C CNN
+	1    1350 1150
+	0    1    1    0   
+$EndComp
+Connection ~ 1350 1150
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E48B17D
+P 1350 1250
+F 0 "#FLG?" H 1350 1325 50  0001 C CNN
+F 1 "PWR_FLAG" V 1350 1378 50  0000 L CNN
+F 2 "" H 1350 1250 50  0001 C CNN
+F 3 "~" H 1350 1250 50  0001 C CNN
+	1    1350 1250
+	0    1    1    0   
+$EndComp
+Connection ~ 1350 1250
+$Comp
+L Connector:Raspberry_Pi_2_3 J?
+U 1 1 5E48E874
+P 3000 6100
+F 0 "J?" H 3200 7600 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 3250 7500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 3000 6100 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3000 6100 50  0001 C CNN
+	1    3000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x11_Odd_Even J?
+U 1 1 5E494373
+P 1350 6000
+F 0 "J?" H 1400 6717 50  0000 C CNN
+F 1 "CONN_SENSORS" H 1400 6626 50  0000 C CNN
+F 2 "Connector_JST:JST_PHD_B22B-PHDSS_2x11_P2.00mm_Vertical" H 1350 6000 50  0001 C CNN
+F 3 "~" H 1350 6000 50  0001 C CNN
+	1    1350 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 7400 2700 7400
+Connection ~ 2700 7400
+Wire Wire Line
+	2700 7400 2800 7400
+Connection ~ 2800 7400
+Wire Wire Line
+	2800 7400 2900 7400
+Connection ~ 2900 7400
+Wire Wire Line
+	2900 7400 3000 7400
+Connection ~ 3000 7400
+Wire Wire Line
+	3000 7400 3100 7400
+Connection ~ 3100 7400
+Wire Wire Line
+	3100 7400 3200 7400
+Connection ~ 3200 7400
+Wire Wire Line
+	3200 7400 3300 7400
+Wire Wire Line
+	3000 7400 3000 7550
+$Comp
+L power:GND #PWR?
+U 1 1 5E4A6243
+P 3000 7550
+F 0 "#PWR?" H 3000 7300 50  0001 C CNN
+F 1 "GND" H 3005 7377 50  0000 C CNN
+F 2 "" H 3000 7550 50  0001 C CNN
+F 3 "" H 3000 7550 50  0001 C CNN
+	1    3000 7550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4150 7650
+$Comp
+L RF_Module:RFM95W-868S2 U?
+U 1 1 5E4CF970
+P 6250 1600
+F 0 "U?" H 6600 2150 50  0000 C CNN
+F 1 "RFM95W-868S2" H 6600 2050 50  0000 C CNN
+F 2 "RF_Module:HOPERF_RFM9XW_SMD" H 2950 3250 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 2950 3250 50  0001 C CNN
+	1    6250 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5900 2050 6300
+Wire Wire Line
+	2000 6000 2000 6400
+Wire Wire Line
+	1950 6100 1950 6500
+Wire Wire Line
+	1850 6400 1850 6700
+Wire Wire Line
+	1800 6500 1800 6800
+Wire Wire Line
+	1650 5900 2050 5900
+Wire Wire Line
+	1650 6000 2000 6000
+Wire Wire Line
+	1650 6100 1950 6100
+Wire Wire Line
+	1650 6400 1850 6400
+Wire Wire Line
+	1650 6500 1800 6500
+Wire Wire Line
+	1650 5700 1700 5700
+$Comp
+L power:GND #PWR?
+U 1 1 5E4928D7
+P 1400 6800
+F 0 "#PWR?" H 1400 6550 50  0001 C CNN
+F 1 "GND" H 1405 6627 50  0000 C CNN
+F 2 "" H 1400 6800 50  0001 C CNN
+F 3 "" H 1400 6800 50  0001 C CNN
+	1    1400 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4800 2800 4800
+$Comp
+L power:+5V #PWR?
+U 1 1 5E495629
+P 2800 4600
+F 0 "#PWR?" H 2800 4450 50  0001 C CNN
+F 1 "+5V" H 2815 4773 50  0000 C CNN
+F 2 "" H 2800 4600 50  0001 C CNN
+F 3 "" H 2800 4600 50  0001 C CNN
+	1    2800 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3100 4800
+NoConn ~ 3200 4800
+Text Label 3900 6400 0    50   ~ 0
+SPI1_MISO
+Text Label 3900 6500 0    50   ~ 0
+SPI1_MOSI
+Text Label 3900 6600 0    50   ~ 0
+SPI1_SCK
+Wire Wire Line
+	3900 6400 3800 6400
+Wire Wire Line
+	3900 6500 3800 6500
+Wire Wire Line
+	3900 6600 3800 6600
+Wire Wire Line
+	1700 5700 1700 6200
+Wire Wire Line
+	1650 6300 1900 6300
+Wire Wire Line
+	1900 6300 1900 6600
+Wire Wire Line
+	1650 6200 1700 6200
+Connection ~ 1700 6200
+Wire Wire Line
+	1700 6200 1700 6800
+Wire Wire Line
+	1150 5600 1100 5600
+Wire Wire Line
+	1100 5600 1100 5900
+Wire Wire Line
+	1100 5900 1150 5900
+Wire Wire Line
+	1100 5900 1100 6400
+Wire Wire Line
+	1100 6400 1150 6400
+Connection ~ 1100 5900
+Wire Wire Line
+	1100 6400 1100 6800
+Wire Wire Line
+	1100 6800 1400 6800
+Connection ~ 1100 6400
+Connection ~ 1400 6800
+Wire Wire Line
+	1400 6800 1700 6800
+Text Label 1000 5500 2    50   ~ 0
+SPI1_SCK
+Wire Wire Line
+	1000 5500 1150 5500
+Text Label 1000 5700 2    50   ~ 0
+SPI1_MISO
+Text Label 1000 5800 2    50   ~ 0
+SPI1_MOSI
+Wire Wire Line
+	1000 5700 1150 5700
+Wire Wire Line
+	1000 5800 1150 5800
+Wire Wire Line
+	2050 5800 2050 5700
+Wire Wire Line
+	1650 5800 2050 5800
+Text Label 1000 6000 2    50   ~ 0
+I2C1_INT
+Text Label 1000 6100 2    50   ~ 0
+I2C1_RST
+Wire Wire Line
+	1000 6000 1150 6000
+Wire Wire Line
+	1000 6100 1150 6100
+Text Label 1000 6300 2    50   ~ 0
+I2C1_SDA
+Text Label 1000 6500 2    50   ~ 0
+I2C1_SCL
+Wire Wire Line
+	1000 6300 1150 6300
+Wire Wire Line
+	1000 6500 1150 6500
+Wire Wire Line
+	1150 6200 1050 6200
+Wire Wire Line
+	1050 6200 1050 5150
+$Comp
+L power:+5V #PWR?
+U 1 1 5E501C68
+P 1050 5150
+F 0 "#PWR?" H 1050 5000 50  0001 C CNN
+F 1 "+5V" H 1065 5323 50  0000 C CNN
+F 2 "" H 1050 5150 50  0001 C CNN
+F 3 "" H 1050 5150 50  0001 C CNN
+	1    1050 5150
+	1    0    0    -1  
+$EndComp
+Text Label 5650 1300 2    50   ~ 0
+SPI_RFM_SCK
+Text Label 5650 1400 2    50   ~ 0
+SPI_RFM_MOSI
+Text Label 5650 1500 2    50   ~ 0
+SPI_RFM_MOSI
+Text Label 5650 1600 2    50   ~ 0
+SPI_RFM_CS
+Wire Wire Line
+	5650 1300 5750 1300
+Wire Wire Line
+	5650 1400 5750 1400
+Wire Wire Line
+	5650 1500 5750 1500
+Wire Wire Line
+	5650 1600 5750 1600
+Wire Wire Line
+	6150 2200 6250 2200
+Connection ~ 6250 2200
+Wire Wire Line
+	6250 2200 6350 2200
+Wire Wire Line
+	6250 2200 6250 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5E4B5289
+P 6250 2250
+F 0 "#PWR?" H 6250 2000 50  0001 C CNN
+F 1 "GND" H 6255 2077 50  0000 C CNN
+F 2 "" H 6250 2250 50  0001 C CNN
+F 3 "" H 6250 2250 50  0001 C CNN
+	1    6250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E4B5C10
+P 6250 900
+F 0 "#PWR?" H 6250 750 50  0001 C CNN
+F 1 "+3V3" H 6265 1073 50  0000 C CNN
+F 2 "" H 6250 900 50  0001 C CNN
+F 3 "" H 6250 900 50  0001 C CNN
+	1    6250 900 
+	1    0    0    -1  
+$EndComp
+Text Label 6850 2000 0    50   ~ 0
+RFM_DIO0
+Wire Wire Line
+	6850 2000 6750 2000
+Text Label 5650 1800 2    50   ~ 0
+RFM_RST
+Wire Wire Line
+	5650 1800 5750 1800
+$Comp
+L Device:C C?
+U 1 1 5E54AABC
+P 6100 950
+F 0 "C?" V 6352 950 50  0000 C CNN
+F 1 "0.1u" V 6261 950 50  0000 C CNN
+F 2 "" H 6138 800 50  0001 C CNN
+F 3 "~" H 6100 950 50  0001 C CNN
+	1    6100 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 900  6250 950 
+$Comp
+L power:GND #PWR?
+U 1 1 5E552687
+P 5950 950
+F 0 "#PWR?" H 5950 700 50  0001 C CNN
+F 1 "GND" H 5955 777 50  0000 C CNN
+F 2 "" H 5950 950 50  0001 C CNN
+F 3 "" H 5950 950 50  0001 C CNN
+	1    5950 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 950 
+Wire Wire Line
+	6250 950  6250 1100
+Text Label 1650 2000 0    50   ~ 0
+5V_V+
+Text Label 1650 2100 0    50   ~ 0
+5V_V-
+Text Label 1650 2250 0    50   ~ 0
+5V_I+
+Text Label 1650 2350 0    50   ~ 0
+5V_I-
+Wire Wire Line
+	1650 2350 1500 2350
+Wire Wire Line
+	1650 2250 1500 2250
+Wire Wire Line
+	1650 2100 1500 2100
+Wire Wire Line
+	1650 2000 1500 2000
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5EBE80A2
+P 7350 1300
+F 0 "J?" H 7450 1275 50  0000 L CNN
+F 1 "Conn_Coaxial" H 7450 1184 50  0000 L CNN
+F 2 "" H 7350 1300 50  0001 C CNN
+F 3 " ~" H 7350 1300 50  0001 C CNN
+	1    7350 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1300 6750 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5EBF3340
+P 7350 1500
+F 0 "#PWR?" H 7350 1250 50  0001 C CNN
+F 1 "GND" H 7355 1327 50  0000 C CNN
+F 2 "" H 7350 1500 50  0001 C CNN
+F 3 "" H 7350 1500 50  0001 C CNN
+	1    7350 1500
+	1    0    0    -1  
+$EndComp
+Text Label 6800 3350 2    50   ~ 0
+5V_V+
+Text Label 6800 3250 2    50   ~ 0
+5V_V-
+Text Label 6800 3450 2    50   ~ 0
+5V_I+
+Wire Wire Line
+	6800 3150 6900 3150
+Wire Wire Line
+	6800 3250 6900 3250
+Wire Wire Line
+	6800 3350 6900 3350
+Wire Wire Line
+	6800 3450 6900 3450
+Text Label 6800 4100 2    50   ~ 0
+SPI_RFM_MISO
+Text Label 7950 3950 0    50   ~ 0
+SPI_RFM_MOSI
+Text Label 7950 4050 0    50   ~ 0
+SPI_RFM_SCK
+$Sheet
+S 6900 3050 950  1200
+U 5E4DA5E1
+F0 "Communication-Power Processor" 50
+F1 "comm_pwr_proc.sch" 50
+F2 "5V_I-" I L 6900 3150 50 
+F3 "5V_V+" I L 6900 3350 50 
+F4 "5V_V-" I L 6900 3250 50 
+F5 "5V_I+" I L 6900 3450 50 
+F6 "I2C1_SDA" O R 7850 3450 50 
+F7 "I2C1_SCL" B R 7850 3550 50 
+F8 "12V_I-" I L 6900 3600 50 
+F9 "12V_V+" I L 6900 3800 50 
+F10 "12V_I+" I L 6900 3900 50 
+F11 "12V_V-" I L 6900 3700 50 
+F12 "I2C2_SDA" O R 7850 3700 50 
+F13 "I2C2_SCL" B R 7850 3800 50 
+F14 "SPI1_MISO" I L 6900 4100 50 
+F15 "SPI1_MOSI" O R 7850 3950 50 
+F16 "SPI1_CLK" O R 7850 4050 50 
+F17 "RFM_RST" O R 7850 3150 50 
+F18 "RFM_DIO" B R 7850 3250 50 
+F19 "SPI1_CS" O R 7850 4150 50 
+$EndSheet
+$Sheet
+S 6900 4550 500  150 
+U 5E583DF8
+F0 "Engine Control Processor" 50
+F1 "engine_proc.sch" 50
+$EndSheet
+Text Label 7950 3450 0    50   ~ 0
+I2C1_SDA
+Text Label 7950 3550 0    50   ~ 0
+I2C1_SCL
+Wire Wire Line
+	6800 4100 6900 4100
+Text Label 7950 3150 0    50   ~ 0
+RFM_RST
+Text Label 7950 3250 0    50   ~ 0
+RFM_DIO
+Wire Wire Line
+	7950 3950 7850 3950
+Wire Wire Line
+	7950 4050 7850 4050
+Wire Wire Line
+	7950 3550 7850 3550
+Wire Wire Line
+	7950 3450 7850 3450
+Wire Wire Line
+	7950 3250 7850 3250
+Wire Wire Line
+	7950 3150 7850 3150
+$Comp
+L Regulator_SwitchedCapacitor:LM27762 U?
+U 1 1 5E64E86C
+P 3000 1100
+F 0 "U?" H 3050 1567 50  0000 C CNN
+F 1 "LM27762" H 3050 1476 50  0000 C CNN
+F 2 "Package_SON:WSON-12-1EP_3x2mm_P0.5mm_EP1x2.65_ThermalVias" H 3150 350 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm27762.pdf" H 5500 700 50  0001 C CNN
+	1    3000 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E6512E2
+P 2050 1450
+F 0 "D?" V 2089 1333 50  0000 R CNN
+F 1 "LED" V 1998 1333 50  0000 R CNN
+F 2 "" H 2050 1450 50  0001 C CNN
+F 3 "~" H 2050 1450 50  0001 C CNN
+	1    2050 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E651EC1
+P 2050 1150
+F 0 "R?" H 2118 1196 50  0000 L CNN
+F 1 "R_US" H 2118 1105 50  0000 L CNN
+F 2 "" V 2090 1140 50  0001 C CNN
+F 3 "~" H 2050 1150 50  0001 C CNN
+	1    2050 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E6526D7
+P 2050 1000
+F 0 "#PWR?" H 2050 850 50  0001 C CNN
+F 1 "+5V" H 2065 1173 50  0000 C CNN
+F 2 "" H 2050 1000 50  0001 C CNN
+F 3 "" H 2050 1000 50  0001 C CNN
+	1    2050 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E652C84
+P 2050 1600
+F 0 "#PWR?" H 2050 1350 50  0001 C CNN
+F 1 "GND" H 2055 1427 50  0000 C CNN
+F 2 "" H 2050 1600 50  0001 C CNN
+F 3 "" H 2050 1600 50  0001 C CNN
+	1    2050 1600
+	1    0    0    -1  
+$EndComp
+Text Label 6800 3150 2    50   ~ 0
+5V_I-
+Wire Wire Line
+	1650 5500 2200 5500
+Wire Wire Line
+	1650 5600 2200 5600
+Wire Wire Line
+	2050 5700 2200 5700
+Wire Wire Line
+	2050 6300 2200 6300
+Wire Wire Line
+	2000 6400 2200 6400
+Wire Wire Line
+	1950 6500 2200 6500
+Wire Wire Line
+	1900 6600 2200 6600
+Wire Wire Line
+	1850 6700 2200 6700
+Wire Wire Line
+	1800 6800 2200 6800
+Text Notes 2550 2350 0    50   ~ 0
+Power Block
+Wire Wire Line
+	2800 4600 2800 4800
+Connection ~ 2800 4800
+Text Notes 2700 600  0    50   ~ 0
+Cap Pump -Rail
+$EndSCHEMATC
