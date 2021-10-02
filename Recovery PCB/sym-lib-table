@@ -6,4 +6,6 @@
   (lib (name recovery-custom)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/recovery-custom.lib)(options "")(descr ""))
   (lib (name CON-SMA-EDGE-S)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/CON-SMA-EDGE-S.lib)(options "")(descr ""))
   (lib (name CAM-M8)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/CAM-M8.lib)(options "")(descr ""))
+  (lib (name ICM-20689)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/ICM-20689.lib)(options "")(descr ""))
+  (lib (name Panasonic-PA-N)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/Panasonic-PA-N.lib)(options "")(descr ""))
 )

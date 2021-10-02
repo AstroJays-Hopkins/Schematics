@@ -113,17 +113,6 @@ F 3 "" H 7650 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_SAMD:ATSAMD21G18A-AUT U2
-U 1 1 5E27AB92
-P 7100 4000
-F 0 "U2" H 7100 2014 50  0000 C CNN
-F 1 "ATSAMD21G18A-AUT" H 7100 1923 50  0000 C CNN
-F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 6150 2250 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_DataSheet_DS40001882F.pdf" H 7100 5000 50  0001 C CNN
-	1    7100 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push SW2
 U 1 1 5E2E1A9C
 P 5450 6350
@@ -134,8 +123,6 @@ F 3 "" H 5450 6550 50  0001 C CNN
 	1    5450 6350
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7000 5900 7200 5900
 $Comp
 L Device:C C7
 U 1 1 5E2E29D6
@@ -246,9 +233,6 @@ Text Notes 5250 6400 2    50   ~ 0
 From 38.4 "External Reset Circuit" (page 1011) \nof Atmel's complete datasheet for uC.
 Text Notes 7850 1200 0    50   ~ 0
 From 38.2 "Power Supply" (page 1008) of \nAtmel's complete datasheet for uC.
-Wire Wire Line
-	7200 5900 7650 5900
-Connection ~ 7200 5900
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 5E51F52E
@@ -405,10 +389,10 @@ Wire Wire Line
 Wire Wire Line
 	5950 3600 6100 3600
 $Comp
-L power:GND #PWR020
+L power:GND #PWR019
 U 1 1 5E53D337
 P 5050 3700
-F 0 "#PWR020" H 5050 3450 50  0001 C CNN
+F 0 "#PWR019" H 5050 3450 50  0001 C CNN
 F 1 "GND" H 5055 3527 50  0000 C CNN
 F 2 "" H 5050 3700 50  0001 C CNN
 F 3 "" H 5050 3700 50  0001 C CNN
@@ -416,10 +400,10 @@ F 3 "" H 5050 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR018
+L power:+3V3 #PWR016
 U 1 1 5E53C566
 P 5050 3250
-F 0 "#PWR018" H 5050 3100 50  0001 C CNN
+F 0 "#PWR016" H 5050 3100 50  0001 C CNN
 F 1 "+3V3" H 5065 3423 50  0000 C CNN
 F 2 "" H 5050 3250 50  0001 C CNN
 F 3 "" H 5050 3250 50  0001 C CNN
@@ -446,21 +430,14 @@ F 3 "~" H 4550 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 1250 2500 550  450 
+S 1250 2500 550  300 
 U 5DF00598
 F0 "IMU" 50
 F1 "IMU.sch" 50
 F2 "SCL" I L 1250 2600 50 
-F3 "nRESET" I L 1250 2850 50 
-F4 "INT" O R 1800 2600 50 
-F5 "SDA" B L 1250 2700 50 
+F3 "INT" O R 1800 2600 50 
+F4 "SDA" B L 1250 2700 50 
 $EndSheet
-Text Label 1100 2850 2    50   ~ 0
-IMU_RESET
-Wire Wire Line
-	1250 2850 1100 2850
-Text Label 5950 5000 2    50   ~ 0
-IMU_RESET
 Wire Wire Line
 	1800 2600 1950 2600
 Text Label 1950 2600 0    50   ~ 0
@@ -593,62 +570,6 @@ BUZZER
 Text Notes 4400 3050 0    50   ~ 0
 UART header 
 $Comp
-L Device:C C10
-U 1 1 5F00EE93
-P 9000 3200
-F 0 "C10" H 9115 3246 50  0000 L CNN
-F 1 "1u" H 9115 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9038 3050 50  0001 C CNN
-F 3 "~" H 9000 3200 50  0001 C CNN
-	1    9000 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C11
-U 1 1 5F00EF43
-P 10350 3200
-F 0 "C11" H 10465 3246 50  0000 L CNN
-F 1 "1u" H 10465 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10388 3050 50  0001 C CNN
-F 3 "~" H 10350 3200 50  0001 C CNN
-	1    10350 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 3350 9000 3450
-Wire Wire Line
-	9000 3450 9750 3450
-Wire Wire Line
-	10350 3450 10350 3350
-Connection ~ 9750 3450
-Wire Wire Line
-	9750 3450 10350 3450
-$Comp
-L power:GND #PWR019
-U 1 1 5F023B13
-P 9750 3450
-F 0 "#PWR019" H 9750 3200 50  0001 C CNN
-F 1 "GND" H 9755 3277 50  0000 C CNN
-F 2 "" H 9750 3450 50  0001 C CNN
-F 3 "" H 9750 3450 50  0001 C CNN
-	1    9750 3450
-	1    0    0    -1  
-$EndComp
-Text Notes 8950 3850 0    50   ~ 0
-Power regulator:\nUse low-ESR ceramic capcitors --- \nsee pg. 13 of regulator datasheet.
-$Comp
-L power:+3.3V #PWR017
-U 1 1 5F02E217
-P 10350 3050
-F 0 "#PWR017" H 10350 2900 50  0001 C CNN
-F 1 "+3.3V" H 10365 3223 50  0000 C CNN
-F 2 "" H 10350 3050 50  0001 C CNN
-F 3 "" H 10350 3050 50  0001 C CNN
-	1    10350 3050
-	1    0    0    -1  
-$EndComp
-Connection ~ 10350 3050
-$Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5F04A0E6
 P 10350 1900
@@ -727,18 +648,6 @@ F 3 "" H 9100 2500 50  0001 C CNN
 $EndComp
 Text Notes 9450 2450 0    50   ~ 0
 Power-on \nindicator lamp
-$Comp
-L power:+BATT #PWR016
-U 1 1 5F05E671
-P 9000 3050
-F 0 "#PWR016" H 9000 2900 50  0001 C CNN
-F 1 "+BATT" H 9015 3223 50  0000 C CNN
-F 2 "" H 9000 3050 50  0001 C CNN
-F 3 "" H 9000 3050 50  0001 C CNN
-	1    9000 3050
-	1    0    0    -1  
-$EndComp
-Connection ~ 9000 3050
 Text Notes 10300 2200 0    50   ~ 0
 Battery connector
 $Comp
@@ -865,8 +774,6 @@ Text Label 9550 5250 0    50   ~ 0
 RADIO_IO
 Text Label 10550 4650 0    50   ~ 0
 SD_CS
-Wire Wire Line
-	5950 5000 6100 5000
 $Comp
 L Connector:TestPoint TP6
 U 1 1 5F0FD40E
@@ -1029,17 +936,6 @@ NoConn ~ 8100 2400
 Wire Wire Line
 	3200 2900 3050 2900
 NoConn ~ 3050 2900
-$Comp
-L recovery-custom:AP7366-33W5-7 U1
-U 1 1 5EFFFA85
-P 9750 3150
-F 0 "U1" H 9750 3517 50  0000 C CNN
-F 1 "AP7366-33W5-7" H 9750 3426 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9750 2750 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP7366.pdf" H 9500 3400 50  0001 C CNN
-	1    9750 3150
-	1    0    0    -1  
-$EndComp
 Connection ~ 1750 5300
 Wire Wire Line
 	1250 5300 1750 5300
@@ -1258,15 +1154,6 @@ Connection ~ 6900 1400
 Wire Wire Line
 	6450 1500 6750 1500
 Connection ~ 6750 1500
-Wire Wire Line
-	9000 3050 9400 3050
-Wire Wire Line
-	9400 3050 9400 3200
-Connection ~ 9400 3050
-Wire Wire Line
-	9750 3400 9750 3450
-Wire Wire Line
-	10100 3050 10350 3050
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 600DBB87
@@ -1311,4 +1198,115 @@ F 3 "~" H 850 7700 50  0001 C CNN
 	1    850  7700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7200 5900 7650 5900
+Wire Wire Line
+	7000 5900 7200 5900
+Connection ~ 7200 5900
+$Comp
+L MCU_Microchip_SAMD:ATSAMD21G18A-AUT U2
+U 1 1 5E27AB92
+P 7100 4000
+F 0 "U2" H 7100 2014 50  0000 C CNN
+F 1 "ATSAMD21G17A-MUT" H 7100 1923 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm" H 6150 2250 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_DataSheet_DS40001882F.pdf" H 7100 5000 50  0001 C CNN
+	1    7100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR018
+U 1 1 5F02E217
+P 10700 3400
+F 0 "#PWR018" H 10700 3250 50  0001 C CNN
+F 1 "+3.3V" H 10715 3573 50  0000 C CNN
+F 2 "" H 10700 3400 50  0001 C CNN
+F 3 "" H 10700 3400 50  0001 C CNN
+	1    10700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR017
+U 1 1 5F05E671
+P 9000 3400
+F 0 "#PWR017" H 9000 3250 50  0001 C CNN
+F 1 "+BATT" H 9015 3573 50  0000 C CNN
+F 2 "" H 9000 3400 50  0001 C CNN
+F 3 "" H 9000 3400 50  0001 C CNN
+	1    9000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 615DFE79
+P 9950 3950
+F 0 "#PWR020" H 9950 3700 50  0001 C CNN
+F 1 "GND" H 9955 3777 50  0000 C CNN
+F 2 "" H 9950 3950 50  0001 C CNN
+F 3 "" H 9950 3950 50  0001 C CNN
+	1    9950 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 9950 3950
+Wire Wire Line
+	9950 3950 10700 3950
+Wire Wire Line
+	9350 3450 9450 3450
+Connection ~ 9350 3450
+Wire Wire Line
+	9350 3650 9350 3450
+Wire Wire Line
+	9450 3650 9350 3650
+Wire Wire Line
+	10450 3450 10700 3450
+$Comp
+L Regulator_Linear:XC6220B331MR U1
+U 1 1 615906ED
+P 9950 3550
+F 0 "U1" H 9950 3917 50  0000 C CNN
+F 1 "XC6220B331MR" H 9950 3826 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9950 3550 50  0001 C CNN
+F 3 "https://www.torexsemi.com/file/xc6220/XC6220.pdf" H 10700 2550 50  0001 C CNN
+	1    9950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5F00EF43
+P 10700 3600
+F 0 "C11" H 10815 3646 50  0000 L CNN
+F 1 "10u" H 10815 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10738 3450 50  0001 C CNN
+F 3 "~" H 10700 3600 50  0001 C CNN
+	1    10700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5F00EE93
+P 9000 3600
+F 0 "C10" H 9115 3646 50  0000 L CNN
+F 1 "10u" H 9115 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9038 3450 50  0001 C CNN
+F 3 "~" H 9000 3600 50  0001 C CNN
+	1    9000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3950 10700 3750
+Wire Wire Line
+	10700 3450 10700 3400
+Connection ~ 10700 3450
+Wire Wire Line
+	9000 3450 9350 3450
+Wire Wire Line
+	9000 3450 9000 3400
+Connection ~ 9000 3450
+Wire Wire Line
+	9000 3750 9000 3950
+Wire Wire Line
+	9000 3950 9950 3950
+Text Notes 9600 3050 0    50   ~ 0
+3.3V LDO Regulator
+NoConn ~ 6100 5000
 $EndSCHEMATC
