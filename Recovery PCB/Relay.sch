@@ -32,7 +32,7 @@ L Device:R_US R8
 U 1 1 5E590CAC
 P 5350 3250
 F 0 "R8" V 5145 3250 50  0000 C CNN
-F 1 "5" V 5236 3250 50  0000 C CNN
+F 1 "10" V 5236 3250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5390 3240 50  0001 C CNN
 F 3 "~" H 5350 3250 50  0001 C CNN
 	1    5350 3250
@@ -56,7 +56,7 @@ L Device:R_US R11
 U 1 1 5E66275A
 P 5350 4950
 F 0 "R11" V 5145 4950 50  0000 C CNN
-F 1 "5" V 5236 4950 50  0000 C CNN
+F 1 "10" V 5236 4950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5390 4940 50  0001 C CNN
 F 3 "~" H 5350 4950 50  0001 C CNN
 	1    5350 4950
@@ -353,7 +353,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 1800 5000 1800
 Text Notes 5250 3900 0    50   ~ 0
-Coil resistance: 40Ohms @ 3v3\nI_rated: 0.0733\nI_rated = Vcc/(R_coil+R_limit)\nAt rated voltage, minimal resistance needed
+Coil resistance: 82Ohms @ 3V\nI_rated: 0.0367\nI_rated = Vcc/(R_coil+R_limit)\nAt rated voltage, minimal resistance needed
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 60045E18
@@ -383,7 +383,7 @@ U 1 1 617141C8
 P 5900 2950
 F 0 "U5" V 6000 2500 50  0000 C CNN
 F 1 "Panasonic-PA-N" V 5900 2250 50  0000 C CNN
-F 2 "" H 5900 2950 50  0001 C CNN
+F 2 "Parts:Panasonic-PA-N" H 5900 2950 50  0001 C CNN
 F 3 "" H 5900 2950 50  0001 C CNN
 	1    5900 2950
 	0    -1   -1   0   
@@ -394,7 +394,7 @@ U 1 1 61714E6E
 P 5900 4650
 F 0 "U6" V 6000 4200 50  0000 C CNN
 F 1 "Panasonic-PA-N" V 5900 3950 50  0000 C CNN
-F 2 "" H 5900 4650 50  0001 C CNN
+F 2 "Parts:Panasonic-PA-N" H 5900 4650 50  0001 C CNN
 F 3 "" H 5900 4650 50  0001 C CNN
 	1    5900 4650
 	0    -1   -1   0   
