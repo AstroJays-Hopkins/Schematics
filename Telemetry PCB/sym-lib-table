@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ADF7023-JBCPZ)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/ADF7023-JBCPZ.lib)(options "")(descr ""))
+  (lib (name CON-SMA-EDGE-S)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/CON-SMA-EDGE-S.lib)(options "")(descr ""))
 )

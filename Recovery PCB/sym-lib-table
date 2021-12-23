@@ -8,4 +8,5 @@
   (lib (name CAM-M8)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/CAM-M8.lib)(options "")(descr ""))
   (lib (name ICM-20689)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/ICM-20689.lib)(options "")(descr ""))
   (lib (name Panasonic-PA-N)(type Legacy)(uri ${KIPRJMOD}/../Lib/Library/Panasonic-PA-N.lib)(options "")(descr ""))
+  (lib (name Recovery-PCB-rescue)(type Legacy)(uri "${KIPRJMOD}/Recovery PCB-rescue.lib")(options "")(descr ""))
 )
